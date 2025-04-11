@@ -13,8 +13,9 @@ const {
 const app = express();
 
 // Routes and Express server setup
-const loginData = require("routes/routes");
-const routeRouter = require("routes/app");
+const loginData = require("./routes/routes");
+const routeRouter = require("./routes/app");
+
 
 app.use(loginData);
 app.use(routeRouter);
